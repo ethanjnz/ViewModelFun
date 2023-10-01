@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Numbers";
+}
+
+@* @model List<int> *@
+@* <div class="text-center">
+<h1>Here are some numbers</h1>
+@{
+foreach (int num in Model)
+{
+<p>@num</p>
+}
+}
+</div> *@
+@model Number
+<div class="text-center">
+    <h1>Here are some numbers</h1>
+    @{
+        foreach (int num in Model.TheNumber)
+        {
+            <p>@num</p>
+        }
+    }
+</div>
